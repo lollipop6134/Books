@@ -1082,7 +1082,7 @@
           const query = document.getElementById("book").value.toLowerCase();
           const filteredBooks = books.filter(book => book.title.toLowerCase().includes(query) || book.author.toLowerCase().includes(query));
           const html = filteredBooks.map(book => `<p>${book.title}, автор: ${book.author}, полка: ${book.shelf}</p>`).join("");
-          result.innerHTML = html + "Результатов: " + filteredBooks.length;
+          result.innerHTML = "Результатов: " + filteredBooks.length + html;
         });
       </script>      
   </body>
